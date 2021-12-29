@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.card {
+  @apply bg-white rounded-xl overflow-hidden w-80 m-6;
+}
+
+.card-content {
+  @apply flex-col p-4;
+}
+
+.tag {
+  @apply text-white px-4 py-1 rounded-3xl text-xs font-light uppercase;
+}
+
+.description {
+  @apply text-sm text-gray-700 my-2 leading-5;
+}
+
+.card-title {
+  @apply text-3xl mt-2;
+}
+
+.footer-card-content {
+  @apply pr-4 text-sm mt-3;
+}
 /*# sourceMappingURL=style.css.map */
