@@ -1,0 +1,23 @@
+{
+  "name": "FE-Challenge-1",
+  "version": "1.0.0",
+  "description": "Coding challenge centered around fetching a JSON file and displaying the data into a blog like format",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind -i ./src/styles/style.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eerkz/FE-Challenge-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eerkz/FE-Challenge-1/issues"
+  },
+  "homepage": "https://github.com/Eerkz/FE-Challenge-1#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.8"
+  }
+}
