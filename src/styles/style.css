@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-  @apply bg-white rounded-xl overflow-hidden w-80 m-6;
+  @apply bg-white rounded-xl overflow-hidden w-80 my-4;
 }
 
 .card-content {
@@ -28,5 +28,21 @@
 
 .footer-card-content {
   @apply pr-4 text-sm mt-3;
+}
+
+.header-cont {
+  max-height: 384px;
+}
+
+.header-img-cont {
+  width: 550px;
+}
+
+body {
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

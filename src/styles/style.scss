@@ -7,3 +7,11 @@
 @tailwind utilities;
 
 @import './components/_card';
+@import './components/_header';
+
+body {
+    width: 100vw;
+}
+main {
+    width: 100vw;
+}
