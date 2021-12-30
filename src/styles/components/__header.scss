@@ -1,14 +1,17 @@
 .header-cont {
-    max-height: 384px;
+    @apply flex md:justify-center lg:justify-start mx-4;
+    min-height: 384px;
 }
 
 .header-content {
-    @apply flex flex-row bg-white rounded-xl overflow-hidden mb-6 items-center;
+    @apply  justify-center flex flex-wrap md:flex-nowrap flex-row bg-white rounded-xl overflow-hidden md:mb-6 items-center;
 }
 .header-img-cont {
-    width: 550px;
+    // width: 550px;
+    @apply w-80 md:w-128 ;
+    
 
     img {
-        @apply h-72 w-full object-cover rounded-2xl;
+        @apply sm:h-72 w-full object-cover rounded-xl;
     }
 }

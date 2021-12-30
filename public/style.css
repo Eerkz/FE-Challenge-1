@@ -445,8 +445,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 12rem;
 }
 
-.w-full{
-  width: 100%;
+.w-80{
+  width: 20rem;
 }
 
 .min-w-full{
@@ -487,8 +487,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
-.p-8{
-  padding: 2rem;
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pl-0{
+  padding-left: 0px;
 }
 
 .text-xs{
@@ -579,31 +584,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.header-cont{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+}
+
+@media (min-width: 768px){
+  .header-cont{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px){
+  .header-cont{
+    justify-content: flex-start;
+  }
+}
+
 .header-cont {
-  max-height: 384px;
+  min-height: 384px;
 }
 
 .header-content{
-  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.header-img-cont {
-  width: 550px;
+@media (min-width: 768px){
+  .header-content{
+    margin-bottom: 1.5rem;
+  }
+
+  .header-content{
+    flex-wrap: nowrap;
+  }
+}
+
+.header-img-cont{
+  width: 20rem;
+}
+
+@media (min-width: 768px){
+  .header-img-cont{
+    width: 32rem;
+  }
 }
 
 .header-img-cont img{
-  height: 18rem;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 640px){
+  .header-img-cont img{
+    height: 18rem;
+  }
 }
 
 main{
@@ -678,7 +723,17 @@ body{
   font-family: Roboto;
 }
 
+@media (min-width: 640px){
+  .sm\:p-8{
+    padding: 2rem;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:w-full{
+    width: 100%;
+  }
+
   .md\:shrink-0{
     flex-shrink: 0;
   }
