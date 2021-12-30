@@ -1,6 +1,14 @@
 .header-cont {
     max-height: 384px;
 }
+
+.header-content {
+    @apply flex flex-row bg-white rounded-xl overflow-hidden mb-6 items-center;
+}
 .header-img-cont {
     width: 550px;
+
+    img {
+        @apply h-72 w-full object-cover rounded-2xl;
+    }
 }

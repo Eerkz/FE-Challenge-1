@@ -463,20 +463,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.m-0{
-  margin: 0px;
-}
-
-.mt-8{
-  margin-top: 2rem;
+.mr-1{
+  margin-right: 0.25rem;
 }
 
 .mb-6{
   margin-bottom: 1.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .mt-2{
@@ -487,16 +479,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-72{
-  height: 18rem;
-}
-
 .max-h-48{
   max-height: 12rem;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .w-full{
@@ -505,10 +489,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-full{
   min-width: 100%;
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -523,33 +503,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-between{
   justify-content: space-between;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
 .rounded-2xl{
   border-radius: 1rem;
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-violet-600{
@@ -592,15 +551,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.p-0{
-  padding: 0px;
-}
-
 .p-8{
   padding: 2rem;
 }
@@ -617,10 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center{
   text-align: center;
-}
-
-.font-Roboto{
-  font-family: Roboto;
 }
 
 .text-xs{
@@ -723,38 +669,56 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 384px;
 }
 
+.header-content{
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .header-img-cont {
   width: 550px;
 }
 
-body {
-  width: 100vw;
+.header-img-cont img{
+  height: 18rem;
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-main {
+body{
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  font-family: Roboto;
+}
+
+main{
+  margin-top: 2rem;
+  display: flex;
   width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1024px){
+  main{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 @media (min-width: 768px){
   .md\:shrink-0{
     flex-shrink: 0;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:px-40{
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
