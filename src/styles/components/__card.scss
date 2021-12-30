@@ -6,6 +6,9 @@
     @apply flex-col p-4;
 }
 
+.card-hover {
+    @apply bg-neutral-900/[0.7] h-48 min-w-full absolute top-0 flex justify-center items-center hidden;
+}
 .tag {
     @apply text-white px-4 py-1 rounded-3xl text-xs font-light uppercase;
 }
@@ -21,3 +24,4 @@
 .footer-card-content {
     @apply pr-4 text-sm mt-3;
 }
+

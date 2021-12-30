@@ -20,5 +20,5 @@ const displayData = (data) => {
 }
 
 const showUI = (data) => {
-
+    
 }
