@@ -425,40 +425,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
 .relative{
   position: relative;
 }
@@ -473,10 +439,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.flex{
-  display: flex;
 }
 
 .max-h-48{
@@ -495,35 +457,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-between{
-  justify-content: space-between;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
-}
-
 .bg-violet-600{
   --tw-bg-opacity: 1;
   background-color: rgb(124 58 237 / var(--tw-bg-opacity));
-}
-
-.bg-green-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-400{
@@ -555,20 +491,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.text-center{
-  text-align: center;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -577,15 +499,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.font-light{
-  font-weight: 300;
 }
 
 .text-neutral-900{
@@ -598,19 +511,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .card{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   width: 20rem;
   overflow: hidden;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .card{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .card-content{
@@ -692,13 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
-body{
-  margin: 0px;
-  overflow-x: hidden;
-  padding: 0px;
-  font-family: Roboto;
-}
-
 main{
   margin-top: 2rem;
   display: flex;
@@ -714,6 +621,61 @@ main{
     padding-left: 10rem;
     padding-right: 10rem;
   }
+}
+
+.card-cont{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .card-cont{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .card-cont{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .card-cont{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .card-cont{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .card-cont{
+    max-width: 1536px;
+  }
+}
+
+.card-cont{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px){
+  .card-cont{
+    justify-content: space-between;
+  }
+}
+
+body{
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  font-family: Roboto;
 }
 
 @media (min-width: 768px){

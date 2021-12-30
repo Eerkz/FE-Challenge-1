@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-  @apply bg-white rounded-xl overflow-hidden w-80 my-4;
+  @apply bg-white rounded-xl overflow-hidden w-80 m-4 lg:mx-0;
 }
 
 .card-content {
@@ -46,11 +46,15 @@
   @apply h-72 w-full object-cover rounded-2xl;
 }
 
-body {
-  @apply font-Roboto m-0 p-0 overflow-x-hidden;
-}
-
 main {
   @apply w-screen flex flex-col flex-wrap items-center justify-start mt-8 lg:px-40;
+}
+
+.card-cont {
+  @apply container flex flex-wrap w-full items-center justify-center lg:justify-between;
+}
+
+body {
+  @apply font-Roboto m-0 p-0 overflow-x-hidden;
 }
 /*# sourceMappingURL=style.css.map */
