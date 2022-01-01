@@ -1,7 +1,12 @@
-const container = document.querySelector('.info-cont');
-const img = document.querySelectorAll('img');
-let output = '';
 
+//get elements
+const container = document.querySelector('.info-cont');
+const headerTitle = document.querySelectorAll('.header-title');
+const img = document.querySelectorAll('img');
+const cardTitle = document.querySelectorAll('.card-title');
+const description = document.querySelectorAll('.description');
+const author = document.querySelectorAll('.author');
+const date = document.querySelectorAll('.date');
 
 //fetch local json data
 fetch("/src/scripts/data.json")
@@ -20,5 +25,5 @@ const displayData = (data) => {
 }
 
 const showUI = (data) => {
-    
+    console.log(data)
 }
