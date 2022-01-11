@@ -4,12 +4,15 @@ const container = document.querySelector('.info-cont');
 const headerTitle = document.querySelectorAll('.header-title');
 const headerAuthor = document.querySelector('.header-author');
 const headerDate = document.querySelector('.header-date');
+const headerDuration = document.querySelector('.header-duration');
 const img = document.querySelectorAll('img');
 const cardTitle = document.querySelectorAll('.card-title');
 const description = document.querySelectorAll('.description');
 const author = document.querySelectorAll('.author');
 const date = document.querySelectorAll('.date');
 const cards = document.querySelectorAll('.card')
+const duration = document.querySelectorAll('.duration')
+
 
 //fetch local json data
 fetch("/src/scripts/data.json")
@@ -41,5 +44,6 @@ const showHeader = (cardNum,data) => {
     let clickedData = data[cardNum]
     headerTitle[0].innerText = clickedData.title
     headerAuthor.innerText = clickedData.author
+    headerDuration.innerText = `${clickedData.duration} min. read`
     // headerDate[0].innerText = clickedData.author
 }
