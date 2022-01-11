@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-  @apply bg-white rounded-xl overflow-hidden w-80 m-4 lg:mx-0;
+  @apply bg-white hover:cursor-pointer rounded-xl overflow-hidden w-80 m-4 lg:mx-0;
 }
 
 .card-content {
