@@ -24,26 +24,37 @@ fetch("/src/scripts/data.json")
     });
 
 const displayData = (data) => {
-    let dateFormat = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    let postedDate = new Date(data.date)
+    //show first card on header
+    headerTitle[0].innerText = data[0].title
+    headerAuthor.innerText = data[0].author
+    headerDuration.innerText = `${data[0].duration} min. read`
+    headerDate.innerText = getDate(data[0].date)
 
     for (let i=0; i < data.length; i++){
+        let postDate = getDate(data[i].date)
         author[i].innerText = data[i].author
         cardTitle[i].innerText = data[i].title
         description[i].innerText = data[i].description
-    }
+        date[i].innerText = postDate
+        duration[i].innerText = `${data[i].duration} min. read`
 
-    for (let i = 0; i < cards.length; i++){
         cards[i].addEventListener('click', ()=> {
-            showHeader(i,data)
+            updateHeader(i,data,postDate)
         })
     }
+
 }
 
-const showHeader = (cardNum,data) => {
+const updateHeader = (cardNum,data,postDate) => {
     let clickedData = data[cardNum]
     headerTitle[0].innerText = clickedData.title
     headerAuthor.innerText = clickedData.author
     headerDuration.innerText = `${clickedData.duration} min. read`
-    // headerDate[0].innerText = clickedData.author
+    headerDate.innerText = postDate
+}
+
+const getDate = (date) => {
+    let postDate = new Date(date.slice(0,9))
+    
+    return postDate.toLocaleDateString()
 }
