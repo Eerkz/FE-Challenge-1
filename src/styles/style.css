@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-  @apply bg-white rounded-xl overflow-hidden w-80 m-4 lg:mx-0;
+  position: relative;
+  height: 430px;
+  @apply bg-white hover:cursor-pointer rounded-xl overflow-hidden w-80 m-4 lg:mx-0;
 }
 
 .card-content {
@@ -27,11 +29,13 @@
 }
 
 .footer-card-content {
+  position: absolute;
+  bottom: 0;
   @apply pr-4 text-sm mt-3;
 }
 
 .header-cont {
-  @apply flex md:justify-center lg:justify-start mx-4;
+  @apply flex md:justify-center lg:justify-start;
   min-height: 384px;
 }
 

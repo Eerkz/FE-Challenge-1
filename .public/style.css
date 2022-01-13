@@ -429,10 +429,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.mb-14{
-  margin-bottom: 3.5rem;
-}
-
 .mr-1{
   margin-right: 0.25rem;
 }
@@ -443,10 +439,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .max-h-48{
@@ -463,6 +455,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-violet-600{
